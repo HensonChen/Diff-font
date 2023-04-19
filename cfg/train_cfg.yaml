@@ -1,4 +1,4 @@
-data_dir: 'path_to_dataset/'
+data_dir: './save_folder/id_0'
 chara_nums: 6625
 diffusion_steps: 1000
 noise_schedule: 'linear'
