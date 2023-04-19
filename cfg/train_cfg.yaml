@@ -2,7 +2,7 @@ data_dir: './save_folder/id_0'
 chara_nums: 200 #6625
 diffusion_steps: 1000
 noise_schedule: 'linear'
-image_size: 140 #80
+image_size: 80
 num_channels: 128
 num_res_blocks: 3
 lr: 0.0001
