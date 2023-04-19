@@ -218,7 +218,7 @@ class TrainLoop:
                 for k, v in cond.items()
             }
             micro_sty = sty_batch[i: i + self.microbatch].to(dist_util.dev())
-            micro_cond['sty'] = self.ddp_model.sty_encoder(micro_sty.clone().detach())
+            micro_cond['sty'] = self.ddp_model.module.sty_encoder(micro_sty.clone().detach())
 
             last_batch = (i + self.microbatch) >= batch.shape[0]
             t, weights = self.schedule_sampler.sample(micro.shape[0], dist_util.dev())
