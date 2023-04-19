@@ -1,5 +1,5 @@
 data_dir: './save_folder/id_0'
-chara_nums: 150 #6625
+chara_nums: 140 #6625
 diffusion_steps: 1000
 noise_schedule: 'linear'
 image_size: 80
